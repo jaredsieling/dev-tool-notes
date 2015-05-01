@@ -28,3 +28,9 @@ and in the build.gradle file you would have:
 ```
 compile project(':..:SampleLibrary:client_library')
 ```
+
+NOTES:
+
+1. This assumes the library project directory is at the location ../ relative to the app project directory.
+2. If you are doing this just for development, be sure to change the library location in the dependencies back to remote repo, if you don't want others who are using the library to have to install it locally on their machines.  You would of course need to publish the library (jcenter or mavenCentral) before they could use it.
+3. Another option, instead of point to the local library module and having it build when you build the app, is to publish the artifact to your local repository, with something like 'gradle uploadArchives'.  
