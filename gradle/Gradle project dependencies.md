@@ -8,7 +8,7 @@ compile 'com.squareup.okhttp:okhttp:2.3.0'
 
 to specify the coordinates of the artifact you want from that repo. Then when you build, gradle automatically fetches the artifacts and includes.
 
-However, if you want to use a library project you have on your local machine, say during development or something, and not have that code reside in the lib folder in your app, you need to specify the location of the local project directory.
+However, if you want to use a library project you have on your local machine, say during development or something, and not have that library (.jar or .aar file) reside in the libs folder in your app, you need to specify the location of the local project directory.
 
 This can be done in two steps:
 
